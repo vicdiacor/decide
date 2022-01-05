@@ -28,7 +28,7 @@ class StoreView(generics.ListAPIView):
          * voter: id
          * votes: [ { "a": int, "b": int } , { "a": int, "b": int } ]
         """
-
+        print("ENTRO EN STORE")
         vid = request.data.get('voting')
         voting = mods.get('voting', params={'id': vid})
         if not voting or not isinstance(voting, list):
