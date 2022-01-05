@@ -44,13 +44,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'scheduler.apps.SchedulerConfig',
-    'django.contrib.sites',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'allauth.socialaccount.providers.discord',
-    'allauth.socialaccount.providers.github',
     'corsheaders',
     'django_filters',
     'rest_framework',
@@ -59,10 +52,7 @@ INSTALLED_APPS = [
     'gateway',
 ]
 
-SITE_ID = 1
-ACCOUNT_EMAIL_VERIFICATION = "none"
-LOGIN_REDIRECT_URL = "home"
-ACCOUNT_LOGOUT_ON_GET = True
+
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -194,18 +184,18 @@ try:
     from local_settings import *
 except ImportError:
     APIS = {
-    'authentication': 'https://decide-part-chullo-2.herokuapp.com/',
-    'base': 'https://decide-part-chullo-2.herokuapp.com/',
-    'booth': 'https://decide-part-chullo-2.herokuapp.com/',
-    'census': 'https://decide-part-chullo-2.herokuapp.com/',
-    'mixnet': 'https://decide-part-chullo-2.herokuapp.com/',
-    'postproc': 'https://decide-part-chullo-2.herokuapp.com/',
-    'store': 'https://decide-part-chullo-2.herokuapp.com/',
-    'visualizer': 'https://decide-part-chullo-2.herokuapp.com/',
-    'voting': 'https://decide-part-chullo-2.herokuapp.com/',
+    'authentication': 'https://decide-part-chullo-2.herokuapp.com',
+    'base': 'https://decide-part-chullo-2.herokuapp.com',
+    'booth': 'https://decide-part-chullo-2.herokuapp.com',
+    'census': 'https://decide-part-chullo-2.herokuapp.com',
+    'mixnet': 'https://decide-part-chullo-2.herokuapp.com',
+    'postproc': 'https://decide-part-chullo-2.herokuapp.com',
+    'store': 'https://decide-part-chullo-2.herokuapp.com',
+    'visualizer': 'https://decide-part-chullo-2.herokuapp.com',
+    'voting': 'https://decide-part-chullo-2.herokuapp.com',
     }
 
-    BASEURL =  'https://decide-part-chullo-2.herokuapp.com/'
+    BASEURL =  'https://decide-part-chullo-2.herokuapp.com'
 
     DATABASES = dict()
 
@@ -223,29 +213,3 @@ if os.path.exists("config.jsonnet"):
 
 
 INSTALLED_APPS = INSTALLED_APPS + MODULES
-
-EMAIL_USE_TLS = True  
-EMAIL_HOST = env('EMAIL_HOST')
-EMAIL_HOST_USER = env('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
-EMAIL_PORT = 587
-
-
-
-SOCIALACCOUNT_PROVIDERS = {
-    'discord': {
-        'APP': {
-            'client_id': env('client_id_discord'),
-            'secret': env('secret_key_discord'),
-            'key': ''
-        }
-    },
-    
-    'github': {
-        'APP': {
-            'client_id': env('client_id_github'),
-            'secret': env('secret_key_github'),
-            'key': ''
-        }
-    }
-}
