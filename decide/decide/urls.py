@@ -26,7 +26,6 @@ urlpatterns = [
     path('doc/', schema_view),
     path('gateway/', include('gateway.urls')),
     path('', vistasAuth.inicio, name="home"),
-    path("accounts/", include("allauth.urls")),
 ]
 
 for module in settings.MODULES:
