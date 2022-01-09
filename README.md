@@ -3,7 +3,6 @@
 Plataforma voto electrónico educativa
 =====================================
 
-Cambio inicial
 Cambio 2
 
 El objetivo de este proyecto es implementar una plataforma de voto
