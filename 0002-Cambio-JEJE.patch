@@ -1,0 +1,25 @@
+From 5466bd19a1ca6e8cfd27bb2d7e893ceac4d48b1c Mon Sep 17 00:00:00 2001
+From: vicdiacor <vicdiacor@alum.us.es>
+Date: Sun, 9 Jan 2022 22:10:19 +0100
+Subject: [PATCH 2/4] Cambio JEJE
+
+---
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/README.md b/README.md
+index 992e2f1..4635d12 100644
+--- a/README.md
++++ b/README.md
+@@ -3,7 +3,7 @@
+ Plataforma voto electrónico educativa
+ =====================================
+ 
+-Cambio 6
++Cambio JEJEJE
+ 
+ El objetivo de este proyecto es implementar una plataforma de voto
+ electrónico seguro, que cumpla una serie de garantías básicas, como la
+-- 
+2.25.1
+

@@ -1,0 +1,27 @@
+From ae15ab95c014287c04b4253749f77b1a946899f7 Mon Sep 17 00:00:00 2001
+From: vicdiacor <vicdiacor@alum.us.es>
+Date: Sun, 9 Jan 2022 22:11:01 +0100
+Subject: [PATCH 3/4] Cambio 103
+
+---
+ README.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/README.md b/README.md
+index 4635d12..74f46f2 100644
+--- a/README.md
++++ b/README.md
+@@ -5,6 +5,10 @@ Plataforma voto electrónico educativa
+ 
+ Cambio JEJEJE
+ 
++Holinski
++
++Cambio 103
++
+ El objetivo de este proyecto es implementar una plataforma de voto
+ electrónico seguro, que cumpla una serie de garantías básicas, como la
+ anonimicidad y el secreto del voto.
+-- 
+2.25.1
+

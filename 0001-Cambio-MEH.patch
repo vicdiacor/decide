@@ -1,0 +1,27 @@
+From b810823b1cb42d1241d26dbed91ef25836e09a4e Mon Sep 17 00:00:00 2001
+From: vicdiacor <vicdiacor@alum.us.es>
+Date: Sun, 9 Jan 2022 22:11:17 +0100
+Subject: [PATCH] Cambio MEH
+
+---
+ README.md | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/README.md b/README.md
+index 74f46f2..ecb60c9 100644
+--- a/README.md
++++ b/README.md
+@@ -7,7 +7,9 @@ Cambio JEJEJE
+ 
+ Holinski
+ 
+-Cambio 103
++Cambio 107 Nueva linea
++
++Cambio 104
+ 
+ El objetivo de este proyecto es implementar una plataforma de voto
+ electrónico seguro, que cumpla una serie de garantías básicas, como la
+-- 
+2.25.1
+
