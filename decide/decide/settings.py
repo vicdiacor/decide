@@ -185,7 +185,7 @@ except ImportError:
 
     DATABASES['default'] =  dj_database_url.config()
     django_heroku.settings(locals())
-    print("local_settings.py not found")
+    
 
 # loading jsonnet config
 if os.path.exists("config.jsonnet"):
